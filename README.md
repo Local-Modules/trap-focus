@@ -15,7 +15,12 @@ const Component = () => {
   const ref = useTrapFocus()
   
   return (
-    <div ref={ref}>...</div>
+    <div 
+      ref={ref}
+      tabIndex={0} // don't forget to add this
+    >
+      ...
+    </div>
   )
 }
 ```
